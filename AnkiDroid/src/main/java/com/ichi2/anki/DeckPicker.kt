@@ -1127,6 +1127,12 @@ open class DeckPicker :
                 Timber.i("ContextMenu: Export deck selected")
                 viewModel.exportDeck(deckId)
             }
+            DeckPickerContextMenuOption.P2P_SHARE -> {
+                startActivity(
+                    com.ichi2.anki.p2p.P2PShareFragment
+                        .getIntent(this, deckId),
+                )
+            }
             DeckPickerContextMenuOption.UNBURY -> {
                 Timber.i("ContextMenu: Unbury deck selected")
                 viewModel.unburyDeck(deckId)

@@ -99,6 +99,7 @@ class DeckPickerMenuContentProvider(
                     add(DeckPickerContextMenu.DeckPickerContextMenuOption.CUSTOM_STUDY)
                 }
                 add(DeckPickerContextMenu.DeckPickerContextMenuOption.EXPORT_DECK)
+                add(DeckPickerContextMenu.DeckPickerContextMenuOption.P2P_SHARE)
                 if (hasBuriedInDeck) {
                     add(DeckPickerContextMenu.DeckPickerContextMenuOption.UNBURY)
                 }

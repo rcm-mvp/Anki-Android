@@ -58,6 +58,8 @@ class DeckPickerContextMenu : AnalyticsDialogFragment() {
         CUSTOM_STUDY,
         DELETE_DECK,
         EXPORT_DECK,
+
+        P2P_SHARE,
         UNBURY,
         CUSTOM_STUDY_REBUILD,
         CUSTOM_STUDY_EMPTY,
@@ -77,6 +79,7 @@ class DeckPickerContextMenu : AnalyticsDialogFragment() {
                     CUSTOM_STUDY -> TR.sentenceCase.customStudy
                     DELETE_DECK -> TR.sentenceCase.deleteDeck
                     EXPORT_DECK -> getString(CommonString.export_deck)
+                    P2P_SHARE -> "Share (P2P)"
                     UNBURY -> TR.studyingUnbury()
                     CUSTOM_STUDY_REBUILD -> TR.actionsRebuild()
                     CUSTOM_STUDY_EMPTY -> getString(CommonString.empty_cram_label)
